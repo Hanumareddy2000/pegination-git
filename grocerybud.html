@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Grocery Bud List</title>
+    <link rel="stylesheet" href="grocerybud.css">
+    
+</head>
+<body>
+    <div class="grocery-list">
+        <h1><u>Grocery List</u></h1>
+        <input type="text" id="addItem" placeholder="Add an item">
+        <button id="addBtn" onclick="addItemFunction()">Add Item</button>
+        <ol id="list">
+            <li>Milk <i class="material-icons close">close</i></li>
+            <li>Rice <i class="material-icons close">close</i></li>
+            <li>Dry Fruits <i class="material-icons close">close</i></li>
+            <li>Bread <i class="material-icons close">close</i></li>
+            <li>Oats <i class="material-icons close">close</i></li>               
+        </ol>
+    </div>
+    <script src="grocerybud.js"></script>
+</body>
+</html>

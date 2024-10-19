@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs</title>
+    <link rel="stylesheet" href="tabs.css">
+</head>
+<body>
+
+<div class="tab-container">
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'Tab1')">HTML</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab2')">CSS</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab3')">Java Script</button>
+    </div>
+
+    <div id="Tab1" class="tab-content active">
+        <h2>Content for HTML</h2>
+        <p>HTML, or HyperText Markup Language, is the standard markup language used for creating web pages. It provides the basic structure of a webpage and is used to describe the content on the page.</p>
+    </div>
+    <div id="Tab2" class="tab-content">
+        <h2>Content for CSS</h2>
+        <p>
+            CSS, or Cascading Style Sheets, is a stylesheet language used for describing the presentation and layout of HTML documents. It allows web developers to control the appearance of web pages, including layout, colors, fonts, spacing, and overall visual design. </p>
+    </div>
+    <div id="Tab3" class="tab-content">
+        <h2>Content for Java Script</h2>
+        <p>JavaScript (JS) is a high-level, dynamic, and versatile programming language that is primarily used for adding interactivity and dynamic behavior to web pages. It is one of the core technologies of the web, alongside HTML and CSS, and is essential for modern web development.</p>
+    </div>
+</div>
+
+<script src="tabs.js"></script>
+</body>
+</html>

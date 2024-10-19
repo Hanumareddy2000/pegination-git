@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Wikipedia</title>
+    <link rel="stylesheet" href="wikipedia.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Wikipedia</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article id="article">
+            <h2>Article Title</h2>
+            <p id="content">This is a simple example of a Wikipedia-like page. Click on the buttons below to load different articles.</p>
+        </article>
+        
+        <aside>
+            <h3>Articles</h3>
+            <button onclick="loadArticle('article1')">Article 1</button>
+            <button onclick="loadArticle('article2')">Article 2</button>
+            <button onclick="loadArticle('article3')">Article 3</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Wikipedia</p>
+    </footer>
+
+    <script src="wikipedia.js"></script>
+</body>
+</html>

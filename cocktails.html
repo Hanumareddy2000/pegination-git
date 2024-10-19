@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Recipes</title>
+    <link rel="stylesheet" href="cocktails.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cocktail Recipes</h1>
+        <label for="cocktail-select">Choose a cocktail:</label>
+        <select id="cocktail-select">
+            <option value="">--Please choose an option--</option>
+            <option value="margarita">Margarita</option>
+            <option value="mojito">Mojito</option>
+            <option value="old_fashioned">Old Fashioned</option>
+            <option value="pina_colada">Pina Colada</option>
+        </select>
+        <div id="recipe-container">
+            <h2 id="cocktail-name"></h2>
+            <ul id="ingredients-list"></ul>
+            <p id="instructions"></p>
+        </div>
+    </div>
+
+    <script src="cocktails.js"></script>
+</body>
+</html>

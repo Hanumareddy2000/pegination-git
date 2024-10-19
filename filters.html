@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter Example</title>
+    <link rel="stylesheet" href="filters.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Filter</h1>
+        
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+            </select>
+            <input type="range" id="priceFilter" min="0" max="100" value="100">
+            <span id="priceValue">Max Price: $100</span>
+        </div>
+
+        <ul id="productList">
+            <li data-category="fruits" data-price="30">Apple - $30</li>
+            <li data-category="fruits" data-price="20">Banana - $20</li>
+            <li data-category="fruits" data-price="50">Cherry - $50</li>
+            <li data-category="vegetables" data-price="15">Carrot - $15</li>
+            <li data-category="vegetables" data-price="40">Broccoli - $40</li>
+            <li data-category="dairy" data-price="60">Cheese - $60</li>
+            <li data-category="dairy" data-price="70">Milk - $70</li>
+            <li data-category="fruits" data-price="90">Mango - $90</li>
+        </ul>
+    </div>
+    
+    <script src="filters.js"></script>
+</body>
+</html>
